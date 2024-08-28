@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="/desktop/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="https://www.aluracursos.com/"> 
+        <img src="/desktop/Logo.png" alt="Logo">
+        </a>
+        <h1>Encriptador de texto</h1>
+    </header>
+
+    <main class="container">
+        <div class="text-section">
+            <!-- Sección del texto de entrada -->
+            <div class="input-section">
+                <textarea id="inputText" class="inputText" placeholder="Ingrese su texto aquí" aria-label="Área de texto para encriptar"></textarea>
+                <p id="errorMsg" class="error-message">Solo se permiten letras minúsculas sin acentos</p>
+                <p class="avisominusculas">Solo letras minúsculas y sin acentos.</p>
+                <div class="buttons">
+                    <button id="encryptBtn">Encriptar</button>
+                    <button id="decryptBtn">Desencriptar</button>
+                
+                </div>
+                <img class="imagen_encriptado" src="/desktop/imagen_encriptado.png" alt="imagen_encriptado" >
+            </div>
+
+            <!-- Sección del texto de salida -->
+            <div class="output-section">
+                <section class="output-content">
+                    <textarea id="outputText" class="outputText" readonly placeholder="El resultado aparecerá aquí" aria-label="Área de texto con el resultado"></textarea>
+                </section>
+                <button id="copyBtn">Copiar Texto</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><strong> Desarrollado por Javier Duarte 2024</strong></footer>
+    <script src="/desktop/script.js"></script>
+</body>
+</html>
